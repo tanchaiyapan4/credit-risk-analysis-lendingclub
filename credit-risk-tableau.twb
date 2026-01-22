@@ -1,0 +1,1355 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1210.1815                               -->
+<workbook original-version='18.1' source-build='2025.3.1 (20253.25.1210.1815)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='risk_by_grade' inline='true' name='federated.0qnhkx805543271anx1cg0sumyt0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='risk_by_grade' name='textscan.0oebxmx1m5z4aa19r53hf1i9vp29'>
+            <connection class='textscan' directory='C:/Users/Tanch/OneDrive/Documents/GitHub/credit-risk-analysis-lendingclub/data/processed' filename='risk_by_grade.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0oebxmx1m5z4aa19r53hf1i9vp29' name='risk_by_grade.csv' table='[risk_by_grade#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='grade' ordinal='0' />
+            <column datatype='integer' name='total_loans' ordinal='1' />
+            <column datatype='integer' name='charge_offs' ordinal='2' />
+            <column datatype='real' name='charge_off_rate' ordinal='3' />
+            <column datatype='real' name='avg_interest_rate' ordinal='4' />
+            <column datatype='real' name='avg_loan_amount' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[risk_by_grade.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>grade</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[grade]</local-name>
+            <parent-name>[risk_by_grade.csv]</parent-name>
+            <remote-alias>grade</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[risk_by_grade.csv_D7358427C4224E429C62127C098C0CD0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_loans</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_loans]</local-name>
+            <parent-name>[risk_by_grade.csv]</parent-name>
+            <remote-alias>total_loans</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[risk_by_grade.csv_D7358427C4224E429C62127C098C0CD0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>charge_offs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[charge_offs]</local-name>
+            <parent-name>[risk_by_grade.csv]</parent-name>
+            <remote-alias>charge_offs</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[risk_by_grade.csv_D7358427C4224E429C62127C098C0CD0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>charge_off_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[charge_off_rate]</local-name>
+            <parent-name>[risk_by_grade.csv]</parent-name>
+            <remote-alias>charge_off_rate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[risk_by_grade.csv_D7358427C4224E429C62127C098C0CD0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_interest_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_interest_rate]</local-name>
+            <parent-name>[risk_by_grade.csv]</parent-name>
+            <remote-alias>avg_interest_rate</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[risk_by_grade.csv_D7358427C4224E429C62127C098C0CD0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_loan_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_loan_amount]</local-name>
+            <parent-name>[risk_by_grade.csv]</parent-name>
+            <remote-alias>avg_loan_amount</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[risk_by_grade.csv_D7358427C4224E429C62127C098C0CD0]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='risk_by_grade.csv' datatype='table' name='[__tableau_internal_object_id__].[risk_by_grade.csv_D7358427C4224E429C62127C098C0CD0]' role='measure' type='quantitative' />
+      <column caption='Avg Interest Rate' datatype='real' name='[avg_interest_rate]' role='measure' type='quantitative' />
+      <column caption='Avg Loan Amount' datatype='real' name='[avg_loan_amount]' role='measure' type='quantitative' />
+      <column caption='Charge Off Rate' datatype='real' name='[charge_off_rate]' role='measure' type='quantitative' />
+      <column caption='Charge Offs' datatype='integer' name='[charge_offs]' role='measure' type='quantitative' />
+      <column caption='Grade' datatype='string' name='[grade]' role='dimension' type='nominal' />
+      <column caption='Total Loans' datatype='integer' name='[total_loans]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Tanch/AppData/Local/Temp/TableauTemp/#TableauTemp_0np16hz1fpqkh71glufty1f8wnw5.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/09/2026 09:10:14 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>grade</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[grade]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>grade</remote-alias>
+              <ordinal>0</ordinal>
+              <family>risk_by_grade.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[risk_by_grade.csv_D7358427C4224E429C62127C098C0CD0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_loans</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_loans]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_loans</remote-alias>
+              <ordinal>1</ordinal>
+              <family>risk_by_grade.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[risk_by_grade.csv_D7358427C4224E429C62127C098C0CD0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>charge_offs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[charge_offs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>charge_offs</remote-alias>
+              <ordinal>2</ordinal>
+              <family>risk_by_grade.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[risk_by_grade.csv_D7358427C4224E429C62127C098C0CD0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>charge_off_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[charge_off_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>charge_off_rate</remote-alias>
+              <ordinal>3</ordinal>
+              <family>risk_by_grade.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[risk_by_grade.csv_D7358427C4224E429C62127C098C0CD0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_interest_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_interest_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_interest_rate</remote-alias>
+              <ordinal>4</ordinal>
+              <family>risk_by_grade.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[risk_by_grade.csv_D7358427C4224E429C62127C098C0CD0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_loan_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_loan_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_loan_amount</remote-alias>
+              <ordinal>5</ordinal>
+              <family>risk_by_grade.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[risk_by_grade.csv_D7358427C4224E429C62127C098C0CD0]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='risk_by_grade.csv' id='risk_by_grade.csv_D7358427C4224E429C62127C098C0CD0'>
+            <properties context=''>
+              <relation connection='textscan.0oebxmx1m5z4aa19r53hf1i9vp29' name='risk_by_grade.csv' table='[risk_by_grade#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='grade' ordinal='0' />
+                  <column datatype='integer' name='total_loans' ordinal='1' />
+                  <column datatype='integer' name='charge_offs' ordinal='2' />
+                  <column datatype='real' name='charge_off_rate' ordinal='3' />
+                  <column datatype='real' name='avg_interest_rate' ordinal='4' />
+                  <column datatype='real' name='avg_loan_amount' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='pricing_vs_risk' inline='true' name='federated.1pot1m31ym7u571cv3pcn0i2x1br' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='pricing_vs_risk' name='textscan.0v3mxnb1yxx9ju1eleulv1dnnom7'>
+            <connection class='textscan' directory='C:/Users/Tanch/OneDrive/Documents/GitHub/credit-risk-analysis-lendingclub/data/processed' filename='pricing_vs_risk.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0v3mxnb1yxx9ju1eleulv1dnnom7' name='pricing_vs_risk.csv' table='[pricing_vs_risk#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='grade' ordinal='0' />
+            <column datatype='integer' name='total_loans' ordinal='1' />
+            <column datatype='integer' name='charge_offs' ordinal='2' />
+            <column datatype='real' name='charge_off_rate_pct' ordinal='3' />
+            <column datatype='real' name='avg_interest_rate_pct' ordinal='4' />
+            <column datatype='real' name='avg_loan_amount' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[pricing_vs_risk.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>grade</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[grade]</local-name>
+            <parent-name>[pricing_vs_risk.csv]</parent-name>
+            <remote-alias>grade</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[pricing_vs_risk.csv_53E46BED2A8344C1842FCC2978E3FA0D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_loans</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_loans]</local-name>
+            <parent-name>[pricing_vs_risk.csv]</parent-name>
+            <remote-alias>total_loans</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pricing_vs_risk.csv_53E46BED2A8344C1842FCC2978E3FA0D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>charge_offs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[charge_offs]</local-name>
+            <parent-name>[pricing_vs_risk.csv]</parent-name>
+            <remote-alias>charge_offs</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pricing_vs_risk.csv_53E46BED2A8344C1842FCC2978E3FA0D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>charge_off_rate_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[charge_off_rate_pct]</local-name>
+            <parent-name>[pricing_vs_risk.csv]</parent-name>
+            <remote-alias>charge_off_rate_pct</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pricing_vs_risk.csv_53E46BED2A8344C1842FCC2978E3FA0D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_interest_rate_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_interest_rate_pct]</local-name>
+            <parent-name>[pricing_vs_risk.csv]</parent-name>
+            <remote-alias>avg_interest_rate_pct</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pricing_vs_risk.csv_53E46BED2A8344C1842FCC2978E3FA0D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_loan_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_loan_amount]</local-name>
+            <parent-name>[pricing_vs_risk.csv]</parent-name>
+            <remote-alias>avg_loan_amount</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pricing_vs_risk.csv_53E46BED2A8344C1842FCC2978E3FA0D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='pricing_vs_risk.csv' datatype='table' name='[__tableau_internal_object_id__].[pricing_vs_risk.csv_53E46BED2A8344C1842FCC2978E3FA0D]' role='measure' type='quantitative' />
+      <column caption='Avg Interest Rate Pct' datatype='real' name='[avg_interest_rate_pct]' role='measure' type='quantitative' />
+      <column caption='Avg Loan Amount' datatype='real' name='[avg_loan_amount]' role='measure' type='quantitative' />
+      <column caption='Charge Off Rate Pct' datatype='real' name='[charge_off_rate_pct]' role='measure' type='quantitative' />
+      <column caption='Charge Offs' datatype='integer' name='[charge_offs]' role='measure' type='quantitative' />
+      <column caption='Grade' datatype='string' name='[grade]' role='dimension' type='nominal' />
+      <column caption='Total Loans' datatype='integer' name='[total_loans]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Tanch/AppData/Local/Temp/TableauTemp/#TableauTemp_0l6nv3y12lyrqw1cryx6c1jhj2ny.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/09/2026 10:02:26 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>grade</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[grade]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>grade</remote-alias>
+              <ordinal>0</ordinal>
+              <family>pricing_vs_risk.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[pricing_vs_risk.csv_53E46BED2A8344C1842FCC2978E3FA0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_loans</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_loans]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_loans</remote-alias>
+              <ordinal>1</ordinal>
+              <family>pricing_vs_risk.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pricing_vs_risk.csv_53E46BED2A8344C1842FCC2978E3FA0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>charge_offs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[charge_offs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>charge_offs</remote-alias>
+              <ordinal>2</ordinal>
+              <family>pricing_vs_risk.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pricing_vs_risk.csv_53E46BED2A8344C1842FCC2978E3FA0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>charge_off_rate_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[charge_off_rate_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>charge_off_rate_pct</remote-alias>
+              <ordinal>3</ordinal>
+              <family>pricing_vs_risk.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pricing_vs_risk.csv_53E46BED2A8344C1842FCC2978E3FA0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_interest_rate_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_interest_rate_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_interest_rate_pct</remote-alias>
+              <ordinal>4</ordinal>
+              <family>pricing_vs_risk.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pricing_vs_risk.csv_53E46BED2A8344C1842FCC2978E3FA0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_loan_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_loan_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_loan_amount</remote-alias>
+              <ordinal>5</ordinal>
+              <family>pricing_vs_risk.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pricing_vs_risk.csv_53E46BED2A8344C1842FCC2978E3FA0D]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='pricing_vs_risk.csv' id='pricing_vs_risk.csv_53E46BED2A8344C1842FCC2978E3FA0D'>
+            <properties context=''>
+              <relation connection='textscan.0v3mxnb1yxx9ju1eleulv1dnnom7' name='pricing_vs_risk.csv' table='[pricing_vs_risk#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='grade' ordinal='0' />
+                  <column datatype='integer' name='total_loans' ordinal='1' />
+                  <column datatype='integer' name='charge_offs' ordinal='2' />
+                  <column datatype='real' name='charge_off_rate_pct' ordinal='3' />
+                  <column datatype='real' name='avg_interest_rate_pct' ordinal='4' />
+                  <column datatype='real' name='avg_loan_amount' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='risk_concentration' inline='true' name='federated.0k5dh0r12umjoq1gwua3m1hktqxl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='risk_concentration' name='textscan.17luu741mu60qj1f54qal15h8frg'>
+            <connection class='textscan' directory='C:/Users/Tanch/OneDrive/Documents/GitHub/credit-risk-analysis-lendingclub/data/processed' filename='risk_concentration.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.17luu741mu60qj1f54qal15h8frg' name='risk_concentration.csv' table='[risk_concentration#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='grade' ordinal='0' />
+            <column datatype='integer' name='total_loans' ordinal='1' />
+            <column datatype='integer' name='total_charge_offs' ordinal='2' />
+            <column datatype='real' name='charge_off_share_pct' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[risk_concentration.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>grade</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[grade]</local-name>
+            <parent-name>[risk_concentration.csv]</parent-name>
+            <remote-alias>grade</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[risk_concentration.csv_386A468D69B848768D8967A17D27E15A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_loans</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_loans]</local-name>
+            <parent-name>[risk_concentration.csv]</parent-name>
+            <remote-alias>total_loans</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[risk_concentration.csv_386A468D69B848768D8967A17D27E15A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_charge_offs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_charge_offs]</local-name>
+            <parent-name>[risk_concentration.csv]</parent-name>
+            <remote-alias>total_charge_offs</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[risk_concentration.csv_386A468D69B848768D8967A17D27E15A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>charge_off_share_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[charge_off_share_pct]</local-name>
+            <parent-name>[risk_concentration.csv]</parent-name>
+            <remote-alias>charge_off_share_pct</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[risk_concentration.csv_386A468D69B848768D8967A17D27E15A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='risk_concentration.csv' datatype='table' name='[__tableau_internal_object_id__].[risk_concentration.csv_386A468D69B848768D8967A17D27E15A]' role='measure' type='quantitative' />
+      <column caption='Charge Off Share Pct' datatype='real' name='[charge_off_share_pct]' role='measure' type='quantitative' />
+      <column caption='Grade' datatype='string' name='[grade]' role='dimension' type='nominal' />
+      <column caption='Total Charge Offs' datatype='integer' name='[total_charge_offs]' role='measure' type='quantitative' />
+      <column caption='Total Loans' datatype='integer' name='[total_loans]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Tanch/AppData/Local/Temp/TableauTemp/#TableauTemp_1usv1hf0mwuzk719bevbs1tizw5f.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/09/2026 10:46:23 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>grade</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[grade]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>grade</remote-alias>
+              <ordinal>0</ordinal>
+              <family>risk_concentration.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[risk_concentration.csv_386A468D69B848768D8967A17D27E15A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_loans</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_loans]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_loans</remote-alias>
+              <ordinal>1</ordinal>
+              <family>risk_concentration.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[risk_concentration.csv_386A468D69B848768D8967A17D27E15A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_charge_offs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_charge_offs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_charge_offs</remote-alias>
+              <ordinal>2</ordinal>
+              <family>risk_concentration.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[risk_concentration.csv_386A468D69B848768D8967A17D27E15A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>charge_off_share_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[charge_off_share_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>charge_off_share_pct</remote-alias>
+              <ordinal>3</ordinal>
+              <family>risk_concentration.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[risk_concentration.csv_386A468D69B848768D8967A17D27E15A]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='risk_concentration.csv' id='risk_concentration.csv_386A468D69B848768D8967A17D27E15A'>
+            <properties context=''>
+              <relation connection='textscan.17luu741mu60qj1f54qal15h8frg' name='risk_concentration.csv' table='[risk_concentration#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='grade' ordinal='0' />
+                  <column datatype='integer' name='total_loans' ordinal='1' />
+                  <column datatype='integer' name='total_charge_offs' ordinal='2' />
+                  <column datatype='real' name='charge_off_share_pct' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='risk by grade'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Charge-Off Rate by Borrower Grade</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='risk_by_grade' name='federated.0qnhkx805543271anx1cg0sumyt0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qnhkx805543271anx1cg0sumyt0'>
+            <column-instance column='[charge_off_rate]' derivation='Avg' name='[avg:charge_off_rate:qk]' pivot='key' type='quantitative' />
+            <column caption='Charge Off Rate' datatype='real' name='[charge_off_rate]' role='measure' type='quantitative' />
+            <column caption='Grade' datatype='string' name='[grade]' role='dimension' type='nominal' />
+            <column-instance column='[grade]' derivation='None' name='[none:grade:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0qnhkx805543271anx1cg0sumyt0].[avg:charge_off_rate:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0qnhkx805543271anx1cg0sumyt0].[avg:charge_off_rate:qk]</rows>
+        <cols>[federated.0qnhkx805543271anx1cg0sumyt0].[none:grade:nk]</cols>
+      </table>
+      <simple-id uuid='{28F0E323-D958-4F59-9F21-4E01A3CDA7A7}' />
+    </worksheet>
+    <worksheet name='risk concentration'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Concentration of Loan Defaults by Borrower Grade
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='risk_concentration' name='federated.0k5dh0r12umjoq1gwua3m1hktqxl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0k5dh0r12umjoq1gwua3m1hktqxl'>
+            <column caption='Grade' datatype='string' name='[grade]' role='dimension' type='nominal' />
+            <column-instance column='[grade]' derivation='None' name='[none:grade:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_charge_offs]' derivation='Sum' name='[sum:total_charge_offs:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Charge Offs' datatype='integer' name='[total_charge_offs]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <alphabetic-sort column='[federated.0k5dh0r12umjoq1gwua3m1hktqxl].[none:grade:nk]' direction='ASC' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0k5dh0r12umjoq1gwua3m1hktqxl].[sum:total_charge_offs:qk]' value='N' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0k5dh0r12umjoq1gwua3m1hktqxl].[sum:total_charge_offs:qk]</rows>
+        <cols>[federated.0k5dh0r12umjoq1gwua3m1hktqxl].[none:grade:nk]</cols>
+      </table>
+      <simple-id uuid='{CE705CB8-1A3D-407A-AF24-113ECF5FE899}' />
+    </worksheet>
+    <worksheet name='risk vs pricing'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Default Risk vs Interest Rate by Borrower Grade
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pricing_vs_risk' name='federated.1pot1m31ym7u571cv3pcn0i2x1br' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pot1m31ym7u571cv3pcn0i2x1br'>
+            <column caption='Avg Interest Rate Pct' datatype='real' name='[avg_interest_rate_pct]' role='measure' type='quantitative' />
+            <column caption='Charge Off Rate Pct' datatype='real' name='[charge_off_rate_pct]' role='measure' type='quantitative' />
+            <column caption='Grade' datatype='string' name='[grade]' role='dimension' type='nominal' />
+            <column-instance column='[avg_interest_rate_pct]' derivation='Min' name='[min:avg_interest_rate_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[charge_off_rate_pct]' derivation='Min' name='[min:charge_off_rate_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[grade]' derivation='None' name='[none:grade:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1pot1m31ym7u571cv3pcn0i2x1br].[min:avg_interest_rate_pct:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.1pot1m31ym7u571cv3pcn0i2x1br].[min:charge_off_rate_pct:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pot1m31ym7u571cv3pcn0i2x1br].[none:grade:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1pot1m31ym7u571cv3pcn0i2x1br].[min:charge_off_rate_pct:qk]</rows>
+        <cols>[federated.1pot1m31ym7u571cv3pcn0i2x1br].[min:avg_interest_rate_pct:qk]</cols>
+      </table>
+      <simple-id uuid='{E476014C-93F9-49F7-89FF-156E7432BCF2}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='89'>
+    <window class='worksheet' name='risk by grade'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0qnhkx805543271anx1cg0sumyt0].[none:grade:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AA2F023A-FA0F-4C03-9773-268EA8721B49}' />
+    </window>
+    <window class='worksheet' name='risk vs pricing'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1pot1m31ym7u571cv3pcn0i2x1br].[none:grade:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1pot1m31ym7u571cv3pcn0i2x1br].[none:grade:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AE952826-3CD3-48F1-9943-022559267270}' />
+    </window>
+    <window class='worksheet' maximized='true' name='risk concentration'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0k5dh0r12umjoq1gwua3m1hktqxl].[none:grade:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D531C771-AA27-4B5E-BF80-B11531D365BF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='risk by grade' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='risk concentration' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='risk vs pricing' width='192'>
+      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
+      9+VIWV2NNgAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
