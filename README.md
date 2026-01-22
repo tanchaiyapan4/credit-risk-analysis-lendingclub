@@ -76,7 +76,7 @@ Recommendations:
 
 ### Credit Risk Overview
 
-![Credit Risk Overview](visuals/credit_risk_overview.png)
+![Credit Risk Overview](visuals/credit-risk-overview.png)
 
 Description: This dashboard provides a high-level summary of LendingClub’s loan portfolio, focusing on overall exposure and credit performance. Key KPIs display total loans issued, total charge-offs, and the overall charge-off rate, allowing stakeholders to quickly assess portfolio health at a glance.
 
@@ -84,7 +84,7 @@ The scatter plot visualizes the relationship between average interest rates and 
 
 ### Risk Concentration by Borrower Grade
 
-![Risk Concentration](visuals/risk_concentration.png)
+![Risk Concentration](visuals/risk-concentration.png)
 
 Description: This dashboard focuses on how credit risk is distributed across borrower grades. The bar chart shows average charge-off rates by grade, clearly illustrating a monotonic increase in default risk from Grade A through Grade G.
 
