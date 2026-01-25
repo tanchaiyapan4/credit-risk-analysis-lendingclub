@@ -76,7 +76,7 @@ Recommendations:
 
 ### Credit Risk Overview
 
-![Credit Risk Overview](visuals/credit_risk_overview.png)
+![Credit Risk Overview](visuals/credit_risk_overview.png.png)
 
 Description: This dashboard provides a high-level summary of LendingClub’s loan portfolio, focusing on overall exposure and credit performance. Key KPIs display total loans issued, total charge-offs, and the overall charge-off rate, allowing stakeholders to quickly assess portfolio health at a glance.
 
