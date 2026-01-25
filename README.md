@@ -53,7 +53,7 @@ Answering this helps stakeholders understand whether higher-risk borrowers are b
 -Version Control: Git/GitHub project structure and documentation
 
 
-## 5. ##Results & Business Recommendations
+## 5. Results & Business Recommendations
 
 Findings:
 
@@ -76,7 +76,7 @@ Recommendations:
 
 ### Credit Risk Overview
 
-![Credit Risk Overview](visuals/credit-risk-overview.png)
+![Credit Risk Overview](visuals/credit_risk_overview.png)
 
 Description: This dashboard provides a high-level summary of LendingClub’s loan portfolio, focusing on overall exposure and credit performance. Key KPIs display total loans issued, total charge-offs, and the overall charge-off rate, allowing stakeholders to quickly assess portfolio health at a glance.
 
