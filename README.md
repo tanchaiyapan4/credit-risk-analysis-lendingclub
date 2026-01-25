@@ -76,7 +76,7 @@ Recommendations:
 
 ### Credit Risk Overview
 
-![Credit Risk Overview](visuals/credit_risk_overview.png.png)
+![Credit Risk Overview][visuals/credit_risk_overview.png]
 
 Description: This dashboard provides a high-level summary of LendingClub’s loan portfolio, focusing on overall exposure and credit performance. Key KPIs display total loans issued, total charge-offs, and the overall charge-off rate, allowing stakeholders to quickly assess portfolio health at a glance.
 
@@ -103,3 +103,6 @@ https://public.tableau.com/app/profile/nathanon.chaiyapan/viz/credit-risk-analys
 -Add time-based analysis to track how risk evolves across vintages.
 
 -Incorporate predictive modeling to estimate expected loss by grade.
+
+
+[def]: visuals/credit_risk_overview.png.png
